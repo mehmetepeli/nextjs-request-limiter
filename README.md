@@ -1,3 +1,38 @@
+# Next.js & Next.js API with Redis & Request Limiter
+## App Environment
+- NextJS
+- NextJS API
+- Redis
+- Axios
+
+## Working
+Local redis call and local general request limiter 
+```
+http://localhost:3000/api/post/
+```
+
+Redis call from library and General request limiter call from library
+```
+http://localhost:3000/api/picture/
+```
+
+Redis call from library and Request limiter IP based call from library
+```
+http://localhost:3000/api/ipchecker/
+```
+
+## Information
+- Website: www.mehmettepeli.com
+- E-Mail: mehmet@mehmettepeli.com
+- Linkedin: https://www.linkedin.com/in/mehmettepeli
+
+Install these packages:
+
+```bash
+npm i redis
+npm i ioredis
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -13,6 +48,27 @@ pnpm dev
 # or
 bun dev
 ```
+
+Second, run the on new terminal for Redis:
+
+```bash
+redis-server
+```
+
+Third, run the on new terminal for Redis:
+
+```bash
+redis-cli
+```
+
+I developed two different way for using <b>Redis</b>:
+- Directly calling inside the API
+- Calling from lib
+
+## API Call
+- http://localhost:3000/api/post/
+- http://localhost:3000/api/picture/
+- http://localhost:3000/api/ipchecker/
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
